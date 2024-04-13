@@ -1,0 +1,203 @@
+* {
+    ;margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    background-color: rgb(111, 228, 226);
+}
+
+body > div {
+    background-color: rgb(187, 223, 223);
+    max-width: 736px;
+    margin-inline: auto;
+    margin-block: 65px;
+    padding: 40px;
+    border: 24px;
+}
+
+div img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+h1, h2 {
+    font-family: 'Josefin Sans', serif;
+}
+
+h1 {
+    font-size: 40px;
+    color: #771414;
+    line-height: 100%;
+    margin-bottom: 24px;
+}
+
+p, li, th, td {
+    font-family: 'outfit', sans-serif;
+
+}
+
+p {
+    color: #403a33;
+    line-height: 150%;
+    margin-bottom: 32px;
+}
+
+.Dados {
+    background-color: #f4bcd8;
+    padding: 28px;
+    border-radius: 12px;
+}
+
+.Dados h2 {
+    font-weight: 600;
+    line-height: 100%;
+    color: #641212;
+    margin-bottom: 16px;
+}
+
+li {
+    padding-left: 10px;
+    color: #000000;
+    line-height: 150%;
+}
+
+li + li {
+    margin-top: 8px;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+.musica {
+    font-size: 20px;
+    line-height: 100%;
+    margin-bottom: 24px;
+}
+
+.assistir {
+    font-size: 20px;
+    line-height: 100%;
+    margin-bottom: 24px;
+}
+
+.sinopse {
+    font-size: 20px;
+    line-height: 100%;
+    margin-bottom: 24px;
+}
+
+.personagens {
+    font-size: 20px;
+    line-height: 100%;
+    margin-bottom: 24px;
+}
+
+.comeco {
+    font-size: 20px;
+    line-height: 100%;
+    margin-bottom: 24px;
+}
+
+h2 {
+    padding: 28px;
+    border-radius: 12px;
+}
+
+.Dados {
+    font-size: 20px;
+    line-height: 100%;
+    margin-bottom: 24px;
+}
+
+.filme {
+    padding: 28px;
+    border-radius: 12px
+}
+
+.filme p {
+    margin-bottom: 25px;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    border-bottom: 1px solid #1e1d1c;
+    width: 100%;
+}
+
+tr {
+    display: flex;
+}
+
+th {
+    text-align: left;
+    padding-left: 32px;
+    line-height: 150%;
+}
+
+td {
+    padding-left: 16px;
+    line-height: 150%;
+}
+
+tr + tr th,
+tr + tr td {
+    padding-block: 12px;
+}
+
+tr:nth-of-type(1) th,
+tr:nth-of-type(1) td {
+    padding-bottom: 12px;
+}
+
+tr:nth-of-type(4) th,
+tr:nth-of-type(4) td {
+    border: none;
+}
+
+.smooth-scroll-to-up{
+    display: none; /* ESCONDE O BOTÃO ANTES DA ROLAGEM */
+    position: fixed; /* DEIXA A POSIÇÃO FIXA DURANTE A ROLAGEM DA PÁGINA */
+    bottom: 4rem/* 64px /; / POSIÇÃO DO BOTÃO NA VERTICAL*/
+    right: 2.5rem/* 40px /; / POSIÇÃO DO BOTÃO NA HORIZONTAL */
+    background-color: rgb(22 163 74 / 0.5); /* COR DE FUNDO CO BOTÃO */
+    color: rgb(255 255 255 / 0.5); /* COR DO TEXTO DO BOTÃO */
+    border-style: none; /* REMOVE A BORDA DO BOTÃO */
+    border-radius: 9999px; /* ARREDONDA AS BORDAS BO BOTÃO */
+    width: auto; /* LARGURA DO BOTÃO É AUTOMÁTICA */
+    padding: 5px 20px;
+    font-size: 1.5rem/* 24px /; / TAMANHO DA FONTE */
+    font-weight: 500 /* bold /; / FONTE TIPO NEGRITO */
+    cursor: pointer; /* TIPO DE CURSOR DO MOUSE */
+    z-index: 50; /* FAZ O BOTÃO APARECER EM CIMA DE TUDO */
+    transition-duration: 200ms; /* TEMPO DE ANIMAÇÃO EM MILISEGUNDOS */
+    transform: rotate(-90deg); /* ROTACIONA O BOTÃO EM -90 GRAUS */
+    scale: 1.25;
+    margin-bottom: 40px; /* MARGEM INFERIOR EM RELAÇÃO À PÁGINA */
+}
+
+.smooth-scroll-to-up:hover { /* ANIMAÇÃO AO PASSAR O MOUSE */
+    scale: 1.5;
+    background-color: #f4bcd8;
+    color: rgb(255, 255, 255, 1);
+}
+
+@media (min-width: 768px) { /* PARA MONITOR MENOR QUE 768px */
+.smooth-scroll-to-up {
+    bottom: 2.5rem/* 40px */;
+    scale: 1;
+}
+}
+
+@media (min-width: 768px) { /* PARA MONITOR MENOR QUE 768px AO PASSAR O MOUSE*/
+    .smooth-scroll-to-up:hover {
+        bottom: 2.5rem/* 40px */;
+        scale: 1.1;
+    }
+}
